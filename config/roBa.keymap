@@ -81,6 +81,7 @@
             label = "ENCODER_MSC_DOWN_UP";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
             tap-ms = <20>;
         };
     };
@@ -93,7 +94,7 @@
 &kp Q               &kp W         &kp E         &kp R                          &kp T                                                                   &kp Y        &kp U  &lt 5 I    &kp O    &kp P
 &mt LEFT_CONTROL A  &kp S         &kp D         &kp F                          &kp G        &kp LS(LG(S))                           &kp MINUS          &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON
 &mt LEFT_SHIFT Z    &kp X         &kp C         &kp V                          &kp B        &kp LEFT_BRACKET                        &kp RIGHT_BRACKET  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LEFT_SHIFT      &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 LEFT_COMMAND  &lt 2 SPACE  &lt_to_layer_0 3 LS(LC(SEMICOLON))      &kp LS(LC(J))      &lt 1 ENTER                             &kp DEL
+&kp LEFT_SHIFT      &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_COMMAND LC(UP_ARROW)  &lt 2 SPACE  &lt_to_layer_0 3 LS(LC(SEMICOLON))      &kp LS(LC(J))      &lt 1 ENTER                             &kp DEL
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
