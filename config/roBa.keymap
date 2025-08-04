@@ -92,7 +92,7 @@
         default_layer {
             bindings = <
 &kp Q               &kp W         &kp E         &kp R                          &kp T                                                                   &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&mt LEFT_CONTROL A  &kp S         &kp D         &kp F                          &kp G        &kp LS(LG(S))                           &kp MINUS          &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON
+&mt LEFT_CONTROL A  &kp S         &kp D         &kp F                          &kp G        &kp LS(LG(S))                           &kp MINUS          &kp H        &kp J  &kp K      &kp L    &lt 4 SEMICOLON
 &mt LEFT_SHIFT Z    &kp X         &kp C         &kp V                          &kp B        &kp LEFT_BRACKET                        &kp RIGHT_BRACKET  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp LEFT_SHIFT      &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_COMMAND LC(UP_ARROW)  &lt 2 SPACE  &lt_to_layer_0 3 LS(LC(SEMICOLON))      &kp LS(LC(J))      &lt 1 ENTER                             &kp DEL
             >;
@@ -120,10 +120,10 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &trans  &trans  &trans  &trans  &trans
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                          &trans
+&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &trans  &kp LG(LEFT_BRACKET)  &kp LA(LC(RETURN))  &kp LG(RIGHT_BRACKET)  &trans
+&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans  &kp LA(LC(LEFT))      &kp LC(UP_ARROW)    &kp LC(LA(RIGHT))      &trans
+&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans  &trans                &trans              &trans                 &trans
+&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                                                                   &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
