@@ -165,10 +165,10 @@
 
         arrow_mac {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))       &kp UP_ARROW    &kp LC(TAB)            &trans                       &trans  &kp LG(LEFT_BRACKET)  &kp LA(LC(RETURN))  &kp LG(RIGHT_BRACKET)  &trans
-&kp HOME        &kp LEFT_ARROW        &kp DOWN_ARROW  &kp RIGHT_ARROW        &kp END  &trans      &trans  &trans  &kp LA(LC(LEFT))      &kp LC(UP_ARROW)    &kp LC(LA(RIGHT))      &trans
-&kp LEFT_SHIFT  &kp LG(LC(LA(LEFT)))  &trans          &kp LG(LA(LC(RIGHT)))  &trans   &trans      &trans  &trans  &trans                &trans              &trans                 &trans
-&trans          &trans                &trans          &trans                 &trans   &trans      &trans  &trans                                                                   &trans
+&kp ESCAPE      &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &trans                       &trans  &kp LG(LEFT_BRACKET)  &kp LA(LC(RETURN))  &kp LG(RIGHT_BRACKET)  &trans
+&kp HOME        &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END  &trans      &trans  &trans  &kp LA(LC(LEFT))      &kp LC(UP_ARROW)    &kp LC(LA(RIGHT))      &trans
+&kp LEFT_SHIFT  &kp LC(LEFT)     &trans          &kp LC(RIGHT)    &trans   &trans      &trans  &trans  &trans                &trans              &trans                 &trans
+&trans          &trans           &trans          &trans           &trans   &trans      &trans  &trans                                                                   &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
