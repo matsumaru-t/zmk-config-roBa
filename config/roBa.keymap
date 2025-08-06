@@ -87,6 +87,7 @@
 
         // --- Copy ---
         // Mac: ダブルタップで Command + C
+
         copy_mac: copy_mac {
             compatible = "zmk,behavior-tap-dance";
             label = "COPY_MAC";
@@ -94,7 +95,9 @@
             tapping-term-ms = <200>;
             bindings = <&kp C>, <&kp LG(C)>;
         };
+
         // Win: ダブルタップで Control + C
+
         copy_win: copy_win {
             compatible = "zmk,behavior-tap-dance";
             label = "COPY_WIN";
@@ -105,6 +108,7 @@
 
         // --- Paste ---
         // Mac: ダブルタップで Command + V
+
         paste_mac: paste_mac {
             compatible = "zmk,behavior-tap-dance";
             label = "PASTE_MAC";
@@ -112,7 +116,9 @@
             tapping-term-ms = <200>;
             bindings = <&kp V>, <&kp LG(V)>;
         };
+
         // Win: ダブルタップで Control + V
+
         paste_win: paste_win {
             compatible = "zmk,behavior-tap-dance";
             label = "PASTE_WIN";
@@ -123,20 +129,23 @@
 
         // --- Undo ---
         // Mac: ダブルタップで Command + Z
+
         undo_mac: undo_mac {
             compatible = "zmk,behavior-tap-dance";
             label = "UNDO_MAC";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp Z>, <&kp LG(Z)>;
+            bindings = <&mt LEFT_SHIFT Z>, <&kp LG(Z)>;
         };
+
         // Win: ダブルタップで Control + Z
+
         undo_win: undo_win {
             compatible = "zmk,behavior-tap-dance";
             label = "UNDO_WIN";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp Z>, <&kp LC(Z)>;
+            bindings = <&mt LEFT_SHIFT Z>, <&kp LC(Z)>;
         };
     };
 
@@ -147,7 +156,7 @@
             bindings = <
 &kp Q               &kp W           &kp E         &kp R                          &kp T                                                     &kp Y        &kp U  &lt 4 I    &kp O    &kp P
 &mt LEFT_CONTROL A  &kp S           &kp D         &kp F                          &kp G        &kp LS(LG(LC(NUMBER_4)))      &kp MINUS      &kp H        &kp J  &kp K      &kp L    &lt 3 SEMICOLON
-&mt LEFT_SHIFT Z    &kp X           &kp C         &kp V                          &kp B        &kp LS(LC(SEMICOLON))         &kp LS(LC(J))  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&undo_mac           &kp X           &copy_mac     &paste_mac                     &kp B        &kp LS(LC(SEMICOLON))         &kp LS(LC(J))  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp LEFT_WIN        &kp LEFT_SHIFT  &kp LEFT_ALT  &mt LEFT_COMMAND LC(UP_ARROW)  &lt 5 SPACE  &lt 1 ESCAPE                  &kp BACKSPACE  &lt 6 ENTER                             &kp SINGLE_QUOTE
             >;
 
