@@ -84,6 +84,13 @@
 
             tap-ms = <20>;
         };
+
+        double_tap: double_tap {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp SINGLE_TAP>, <&kp DOUBLE_TAP>;
+        };
     };
 
     keymap {
