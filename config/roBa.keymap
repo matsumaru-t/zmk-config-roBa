@@ -85,13 +85,58 @@
             tap-ms = <20>;
         };
 
-        double_tap: double_tap {
+        // --- Copy ---
+        // Mac: ダブルタップで Command + C
+        copy_mac: copy_mac {
             compatible = "zmk,behavior-tap-dance";
-            label = "DOUBLE_TAP";
-            bindings = <&kp>, <&kp>;
-            
-            #binding-cells = <2>;
+            label = "COPY_MAC";
+            #binding-cells = <0>;
             tapping-term-ms = <200>;
+            bindings = <&kp C>, <&kp LG(C)>;
+        };
+        // Win: ダブルタップで Control + C
+        copy_win: copy_win {
+            compatible = "zmk,behavior-tap-dance";
+            label = "COPY_WIN";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp C>, <&kp LC(C)>;
+        };
+
+        // --- Paste ---
+        // Mac: ダブルタップで Command + V
+        paste_mac: paste_mac {
+            compatible = "zmk,behavior-tap-dance";
+            label = "PASTE_MAC";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp V>, <&kp LG(V)>;
+        };
+        // Win: ダブルタップで Control + V
+        paste_win: paste_win {
+            compatible = "zmk,behavior-tap-dance";
+            label = "PASTE_WIN";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp V>, <&kp LC(V)>;
+        };
+
+        // --- Undo ---
+        // Mac: ダブルタップで Command + Z
+        undo_mac: undo_mac {
+            compatible = "zmk,behavior-tap-dance";
+            label = "UNDO_MAC";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp Z>, <&kp LG(Z)>;
+        };
+        // Win: ダブルタップで Control + Z
+        undo_win: undo_win {
+            compatible = "zmk,behavior-tap-dance";
+            label = "UNDO_WIN";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp Z>, <&kp LC(Z)>;
         };
     };
 
