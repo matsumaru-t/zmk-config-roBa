@@ -156,7 +156,7 @@
             bindings = <
 &kp Q               &kp W           &kp E         &kp R                          &kp T                                                     &kp Y        &kp U  &lt 4 I    &kp O    &kp P
 &mt LEFT_CONTROL A  &kp S           &kp D         &kp F                          &kp G        &kp LS(LG(LC(NUMBER_4)))      &kp MINUS      &kp H        &kp J  &kp K      &kp L    &lt 3 SEMICOLON
-&undo_mac           &kp X           &copy_mac     &paste_mac                     &kp B        &kp LS(LC(SEMICOLON))         &kp LS(LC(J))  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&mt LSHIFT Z        &kp X           &kp C         &kp V                          &kp B        &kp LS(LC(SEMICOLON))         &kp LS(LC(J))  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp LEFT_WIN        &kp LEFT_SHIFT  &kp LEFT_ALT  &mt LEFT_COMMAND LC(UP_ARROW)  &lt 5 SPACE  &lt 1 ESCAPE                  &kp BACKSPACE  &lt 6 ENTER                             &kp SINGLE_QUOTE
             >;
 
