@@ -164,10 +164,10 @@
 
         default_layer_win {
             bindings = <
-&kp Q               &kp W           &kp E         &kp R                     &kp T                                               &kp Y             &kp U  &lt 6 I    &kp O    &kp P
-&mt LEFT_CONTROL A  &kp S           &kp D         &kp F                     &kp G               &kp LS(LG(S))      &kp MINUS    &kp H             &kp J  &kp K      &kp L    &lt 5 SEMICOLON
-&mt LSHIFT Z        &kp X           &kp C         &kp V                     &kp B               &kp BACKSPACE      &kp RETURN   &kp N             &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL           &kp LEFT_SHIFT  &kp LEFT_ALT  &mt LEFT_CONTROL LG(TAB)  &lt 7 INT_MUHENKAN  &lt 8 SPACE        &lt 4 LG(S)  &lt 2 INT_HENKAN                             &kp SINGLE_QUOTE
+&kp Q               &kp W         &kp E         &kp R                     &kp T                                               &kp Y             &kp U  &lt 6 I    &kp O    &kp P
+&mt LEFT_CONTROL A  &kp S         &kp D         &kp F                     &kp G               &kp LS(LG(S))      &kp MINUS    &kp H             &kp J  &kp K      &kp L    &lt 5 SEMICOLON
+&mt LSHIFT Z        &kp X         &kp C         &kp V                     &kp B               &kp BACKSPACE      &kp RETURN   &kp N             &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LCTRL           &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_CONTROL LG(TAB)  &lt 7 INT_MUHENKAN  &lt 8 SPACE        &lt 4 LG(S)  &lt 3 INT_HENKAN                             &kp SINGLE_QUOTE
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
