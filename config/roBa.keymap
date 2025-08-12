@@ -73,6 +73,13 @@
         double_quotation {
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <20 21>;
+            layers = <0 2 7>;
+        };
+
+        double_quotation_win {
+            bindings = <&kp AT>;
+            key-positions = <20 21>;
+            layers = <1 3 8>;
         };
 
         eq {
@@ -274,8 +281,8 @@
         NUM_WIN {
             bindings = <
 &kp MINUS          &kp N7  &kp N8  &kp N9  &kp COLON                                                      &kp EQUAL          &kp CARET          &kp PLUS         &kp ASTERISK  &kp LEFT_PARENTHESIS
-&kp SLASH          &kp N4  &kp N5  &kp N6  &kp DOUBLE_QUOTES  &kp LC(LA(KP_NUMBER_0))      &kp LS(0x87)   &kp EXCLAMATION    &kp RIGHT_BRACKET  &kp HASH         &kp DOLLAR    &kp PERCENT
-&mt LEFT_SHIFT N0  &kp N1  &kp N2  &kp N3  &kp PERIOD         &kp UNDER                    &kp AMPERSAND  &kp RIGHT_BRACKET  &kp BACKSLASH      &kp RIGHT_BRACE  &kp PIPE      &kp BACKSLASH
+&kp SLASH          &kp N4  &kp N5  &kp N6  &kp DOUBLE_QUOTES  &kp LC(LA(KP_NUMBER_0))      &kp LS(0x87)   &kp EXCLAMATION    &kp LEFT_BRACKET  &kp HASH         &kp DOLLAR    &kp PERCENT
+&mt LEFT_SHIFT N0  &kp N1  &kp N2  &kp N3  &kp PERIOD         &kp UNDER                    &kp AMPERSAND  &kp RIGHT_BRACKET  &kp BACKSLASH      &kp RIGHT_BRACE  &kp PIPE      &kp 0x89
 &trans             &trans  &trans  &trans  &trans             &trans                       &trans         &trans                                                               &kp LS(0x89)
             >;
         };
